@@ -7,6 +7,10 @@ scrape_configs:
     static_configs:
       - targets: ["localhost:9090"]
 
+  - job_name: "x-wnig"
+    static_configs:
+      - targets: ["192.168.78.2:9100"]
+
   - job_name: "nobinobi"
     static_configs:
       - targets: ["192.168.78.3:9100"]
