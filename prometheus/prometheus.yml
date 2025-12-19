@@ -7,10 +7,14 @@ scrape_configs:
     static_configs:
       - targets: ["localhost:9090"]
 
+  - job_name: "nobinobi"
+    static_configs:
+      - targets: ["192.168.78.3:9100"]
+
   - job_name: "death-star"
     static_configs:
-      - targets: ["192.168.73.3:9100"]
+      - targets: ["192.168.78.4:9100"]
 
   - job_name: "ellie"
     static_configs:
-      - targets: ["192.168.73.4:9100"]
+      - targets: ["192.168.78.5:9100"]
